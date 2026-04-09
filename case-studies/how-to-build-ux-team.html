@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building a UX Team at a Startup — Steve Kansa</title>
+  <meta name="description" content="How I built Arkestro's UX practice from scratch — establishing a design system, creating research infrastructure, and changing how a startup thought about design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Steve Kansa</a>
+      <div class="nav-links">
+        <a href="/#work">Work</a>
+        <a href="/#about">About</a>
+        <a href="mailto:stkansa@gmail.com">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="cs-hero">
+    <div class="container">
+      <a href="/" class="cs-back">All case studies</a>
+      <div class="cs-eyebrow">Design Leadership · B2B SaaS · Arkestro</div>
+      <h1>Building a UX Team at a Startup</h1>
+      <p class="cs-subtitle">When I joined Arkestro, there was no design system, no UX research infrastructure, and a culture of building on assumptions. Here's how I changed that.</p>
+      <div class="cs-meta-row">
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Role</span>
+          <span class="cs-meta-value">Head of UX</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Company</span>
+          <span class="cs-meta-value">Arkestro</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Type</span>
+          <span class="cs-meta-value">Design Leadership · 0→1</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Outcome</span>
+          <span class="cs-meta-value">56-component system · 50–80% faster dev · ADA compliance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cs-body">
+    <div class="container">
+
+      <h2>Design System &amp; Component Library</h2>
+      <p>When I first joined Arkestro, there was no design system at all. It needed to be built completely from scratch. The small development team was doing their best, but consistency across the product was poor — an initial audit revealed a shocking number of hardcoded components. Fifty-two separate instances of a "Save" button were identified. Each one slightly different.</p>
+      <p>Change was needed, and quickly.</p>
+      <p>My first recommendation was to adopt ANT Design (ANT D) as the foundational component library. All new design work would use strictly ANT components, and as existing technical debt was addressed, old components were replaced with their ANT D equivalents. This decision alone drove development speed increases of 50–80% depending on the project.</p>
+      <p>Working with contractors from 500 Designs, I built a complete component library with 56 unique components — and growing. Each component was documented and linked to Storybook so developers could go directly from Figma to code without guesswork.</p>
+      <p>Working with our technical writer, I also established language and tone standards across the platform. Previously, the same feature might have three different names depending on which team had written the copy. A consistent design system includes words, not just pixels.</p>
+
+      <div class="finding">
+        <div class="finding-label">Starting Point</div>
+        <p>52 hardcoded versions of a single "Save" button.</p>
+        <span>This was the audit finding that made the case for a design system more vividly than any slide deck could. When developers saw the numbers, buy-in came quickly.</span>
+      </div>
+
+      <h2>Research</h2>
+      <p>Building a research practice was harder than building the design system. When I arrived at Arkestro, there was an existing belief of "we know what our users think" — a sentiment held confidently by people without a UX background. The methods in place were generating biased, misleading data, and products were being built and prioritized based on hunches rather than evidence.</p>
+      <p>I worked closely with the CTO to advocate for proper research methods. It was an uphill battle, particularly with the then-CEO, but within three months I had secured access to Maze and UserTesting.com. For the first time, the team had real insight into user behavior in an unbiased environment.</p>
+      <p>The shift was immediate and undeniable. User tests from prototypes regularly surfaced issues before a single line of code was written. Developers were invited to observe sessions — and something powerful happened: they stopped seeing design as an opinion and started seeing it as data. Buy-in for design solutions increased significantly, and the relationship between design and engineering improved as a result.</p>
+
+      <h2>Working With Developers</h2>
+      <p>One of the most impactful operational changes I introduced was a color-coded file system in Figma. Background color indicated the status of any given file at a glance:</p>
+      <ul>
+        <li><strong>Black backgrounds</strong> — active UX working files</li>
+        <li><strong>Blue backgrounds</strong> — files in refinement with UX, PM, and Engineering</li>
+        <li><strong>Green backgrounds</strong> — ready for engineers to build from</li>
+      </ul>
+      <p>Each file's pages were also linked to individual epics or stories in Jira and Pivotal Tracker. Anyone working on a story could click the link and follow it directly to the corresponding Figma file — no hunting, no confusion about which file was the source of truth.</p>
+      <p>This change came directly from feedback during design critique sessions, where developers expressed frustration about not knowing which file was current. As projects grew in scope and complexity, this system became invaluable. It reduced anxiety, especially during inevitable mid-sprint changes, and helped the whole team stay oriented.</p>
+
+      <h2>Technical Writing</h2>
+      <p>Consistent language across a product is just as important as consistent visual design. Before I joined, the platform had copy written by many different hands with no shared standard for tone or terminology. The same concept might be called three different things across three different screens.</p>
+      <p>I brought Technical Writing under the UX team to ensure continuity across the entire user experience — not just the visual layer. This required constant collaboration with PMs, marketing, customer service, and engineering to align on terminology and keep standards enforced as new features shipped.</p>
+      <p>This work also had meaningful accessibility implications. Clear, consistent language improved the experience for users relying on screen readers and strengthened the platform's adherence to ADA guidelines. It was also simply the right thing to do.</p>
+
+      <h2>Outcomes &amp; Impact</h2>
+      <div class="outcomes">
+        <div class="outcome-stat">
+          <span class="outcome-num">56</span>
+          <span class="outcome-desc">Unique components in the design system — built from scratch over the course of one year</span>
+        </div>
+        <div class="outcome-stat">
+          <span class="outcome-num">50–80%</span>
+          <span class="outcome-desc">Increase in development speed by adopting ANT D over hardcoded components</span>
+        </div>
+        <div class="outcome-stat">
+          <span class="outcome-num">↑ Research</span>
+          <span class="outcome-desc">Unbiased user testing infrastructure established via Maze and UserTesting.com within 3 months</span>
+        </div>
+        <div class="outcome-stat">
+          <span class="outcome-num">✓ ADA</span>
+          <span class="outcome-desc">Improved platform adherence to accessibility guidelines through systematic technical writing standards</span>
+        </div>
+      </div>
+
+      <h2>What We Learned</h2>
+      <p>Building a UX practice at a startup is as much an organizational challenge as it is a design challenge. The technical work — the components, the research tools, the Figma system — is straightforward compared to the cultural work of earning trust and shifting how a company thinks about design.</p>
+      <p>Inviting developers and stakeholders into the research process was the single biggest accelerator of that cultural shift. When design decisions are backed by data that everyone in the room witnessed, the conversation changes. Design is no longer anyone's opinion. It's evidence.</p>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="cs-nav">
+      <a href="vehicle-rentals.html">
+        <div class="cs-nav-label">← Previous</div>
+        <div class="cs-nav-title">Vehicle Rentals</div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/steve-kansa-12b8a84/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:stkansa@gmail.com">Email</a>
+      </div>
+      <p>© 2026 Steve Kansa · Head of UX / Sr. UX Manager</p>
+    </div>
+  </footer>
+
+</body>
+</html>
