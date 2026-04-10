@@ -4,21 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vehicle Rentals: Support Reimagined — Steve Kansa</title>
-  <meta name="description" content="How I scoped and solved a Home Depot fleet management problem — saving 38 minutes per instance and adding $6,000 in revenue per vehicle per year." />
+  <meta name="description" content="How I scoped, researched, and redesigned Home Depot's vehicle fleet management workflow — delivering a 38-minute time savings and $6,000 revenue increase per vehicle per year." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
+
   <nav>
     <div class="nav-inner">
       <a href="/" class="nav-logo">Steve Kansa</a>
       <div class="nav-links">
-        <a href="/#work">Work</a><a href="/#about">About</a><a href="mailto:stkansa@gmail.com">Contact</a>
+        <a href="/#work">Work</a>
+        <a href="/#about">About</a>
+        <a href="mailto:stkansa@gmail.com">Contact</a>
       </div>
     </div>
   </nav>
+
   <section class="cs-hero">
     <div class="container">
       <a href="/" class="cs-back">All case studies</a>
@@ -26,60 +30,126 @@
       <h1>Vehicle Rentals: Support Reimagined</h1>
       <p class="cs-subtitle">"We have a problem and we don't know where to start. Can you help?" — My favorite kind of problem.</p>
       <div class="cs-meta-row">
-        <div class="cs-meta-item"><span class="cs-meta-label">Role</span><span class="cs-meta-value">UX Designer</span></div>
-        <div class="cs-meta-item"><span class="cs-meta-label">Company</span><span class="cs-meta-value">Home Depot</span></div>
-        <div class="cs-meta-item"><span class="cs-meta-label">Type</span><span class="cs-meta-value">Enterprise · Field Operations</span></div>
-        <div class="cs-meta-item"><span class="cs-meta-label">Outcome</span><span class="cs-meta-value">38 min saved · +48 rent-ready days · $6K revenue/vehicle/year</span></div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Role</span>
+          <span class="cs-meta-value">UX Designer</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Company</span>
+          <span class="cs-meta-value">Home Depot</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Type</span>
+          <span class="cs-meta-value">Enterprise · Field Operations</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Outcome</span>
+          <span class="cs-meta-value">38 min saved · +48 rent-ready days · $6K revenue/vehicle/year</span>
+        </div>
       </div>
     </div>
   </section>
+
   <div class="cs-body">
     <div class="container">
+
       <h2>Scenario</h2>
-      <p>This story starts with an email: "We have a problem and we don't know where to start. Can you help?" My favorite kind of problem.</p>
+      <p>This story starts with an email. An email that said: "We have a problem and we don't know where to start. Can you help?" My favorite kind of problem.</p>
       <p>Home Depot's entire vehicle rental fleet is managed by a third party, Element. The problem involved two distinct user groups: Home Depot in-store associates and Element field technicians. Due to COVID-related supply chain strain, reduced manpower, and increased rental demand, inefficiencies in fleet maintenance had become a real business problem.</p>
-      <p>Element wanted to increase user satisfaction to handle the planned growth of the vehicle rental fleet. As the UX Designer, I was responsible for scoping the problem, facilitating research, and creating the digital assets needed to solve it.</p>
+      <p>Element wanted to increase user satisfaction in order to handle the planned growth of the vehicle rental fleet. As the UX Designer on this initiative, I was responsible for scoping the problem, facilitating research, and creating the digital assets needed to solve it.</p>
+      <p>I sat down with the Vehicles team to scope the work, identify users, and map potential pain points. A mixed-methods approach of quantitative and qualitative research was used to establish a baseline of user sentiment and time-on-task.</p>
+
       <h2>Research</h2>
+
       <h3>Surveys</h3>
-      <p>To gather feedback from Rental Center Associates about their experience with Element, we set up a survey in Microsoft Forms and distributed it to 300 stores. Ninety associates responded. The survey used closed questions and Likert scales, with follow-up video interviews conducted to add depth.</p>
+      <p>To gather feedback from Rental Center Associates about their experience with Element, we set up a survey in Microsoft Forms and distributed it to 300 stores. Ninety associates responded and told us their story. The survey used closed questions and Likert scales, with follow-up interviews conducted to add depth to the data.</p>
+
+      <img class="cs-img" src="images/vehicle-rentals/survey-readout.png" alt="Associate feedback survey readout with bar charts" loading="lazy" />
+
       <div class="finding">
         <div class="finding-label">Key Research Finding</div>
         <p>Associates mostly liked working with Element. The method of communication was the most frequently reported problem.</p>
-        <span>Associates expected a digital method of communication — not a phone tree. They told us exactly what was frustrating them and what they needed to fix it.</span>
+        <span>Associates expected a digital method of communication — not a phone tree. They told us exactly what was frustrating them and what they needed to fix it. We turned their feedback into data that stakeholders could actually act on.</span>
       </div>
-      <p>Key findings from the readout: associates liked Element as a partner, but the process of reaching them was broken. Five respondents were also interviewed via video conference for additional context and detail.</p>
+
+      <p>After launching the survey, we synthesized results and shared them in a readout with stakeholders. Key findings: associates liked Element as a partner, but the process of reaching them was broken. The most common pain point was communication — specifically the reliance on a phone-based system when associates expected something digital. Five respondents were also interviewed via video conference for additional context and detail.</p>
+
+      <img class="cs-img" src="images/vehicle-rentals/survey-summary.png" alt="Survey summary showing 79% satisfaction and key associate quotes" loading="lazy" />
+
       <h2>Design</h2>
+
       <h3>Sketches</h3>
-      <p>I start almost every design process with low-fidelity sketches on paper to capture the end-to-end experience and surface opportunities that might not be obvious when looking at individual screens. Storyboards were created to help stakeholders see the scope of work in context. Rough sketches also introduced the idea of incorporating tablets into the overall solution and helped connect individual pain points to broader initiatives like Mobile Contracts.</p>
-      <p>Key learnings from sketches: they reveal patterns that users already know and like. They also identify missing information — license plate numbers were identified as a critical gap through this process.</p>
+      <p>I start almost every design process with low-fidelity sketches on paper. The goal isn't polish — it's to capture the end-to-end experience and surface opportunities that might not be obvious when looking at individual screens.</p>
+      <p>Storyboards were created to help stakeholders see the scope of work in context. Rough sketches also introduced the idea of incorporating tablets into the overall solution and helped connect individual pain points to broader initiatives like Mobile Contracts. This fast, scrappy approach allowed for rapid follow-up while ideas were still fresh.</p>
+
+      <img class="cs-img" src="images/vehicle-rentals/storyboard.png" alt="Hand-drawn storyboard for truck rental workflow" loading="lazy" />
+
+      <p>What I learned from sketches: they reveal patterns that users already know and like. They also identify missing information — license plate numbers, for instance, were identified as a critical gap through this stage of the process.</p>
+
+      <img class="cs-img" src="images/vehicle-rentals/wireframe-sketch.png" alt="Hand-drawn wireframe of Home Depot Vehicles screen" loading="lazy" />
+
       <h3>UI Design</h3>
-      <p>Final screens were designed in Figma following the Home Depot style guide using the ANT design system. Key design decisions: responsiveness (research showed users expected flexibility across devices), familiarity (the layout closely resembled an existing application that had already tested well), and new capabilities (long-requested features like asset images and the ability to transfer vehicles to any Home Depot store or holding facility).</p>
-      <p>High-fidelity prototypes were used to validate designs through moderated usability tests. One lesson: small, subtle UI elements like blue text links for editing and reporting issues created more confusion than they solved — they were cut before launch.</p>
+      <p>Once usability issues were worked out through testing, final screens were designed in Figma following the Home Depot style guide and using the ANT design system. Key design decisions included:</p>
+      <ul>
+        <li>Responsiveness — research showed users expected flexibility across multiple devices, so the design had to work across screen sizes</li>
+        <li>Familiarity — the layout closely resembled an existing application that had already tested well, reducing the learning curve</li>
+        <li>New capabilities — long-requested features were introduced, including images of assets and the ability to transfer a vehicle to any Home Depot store or holding facility</li>
+      </ul>
+      <p>High-fidelity prototypes were used to validate designs with users through moderated usability tests. Given the relatively small and specific user group, moderated tests were the right approach. One lesson from testing: small, subtle UI elements like blue text links for editing and reporting issues created more confusion than they solved — they were cut before launch.</p>
+
+      <img class="cs-img" src="images/vehicle-rentals/figma-overview.png" alt="Figma overview showing General Tools, Vehicles, and Transfers design screens" loading="lazy" />
+
+      <img class="cs-img" src="images/vehicle-rentals/final-ui.png" alt="Final vehicle management UI with Ford F250 Load N Go detail" loading="lazy" />
+
       <h2>Outcomes &amp; Impact</h2>
       <div class="outcomes">
-        <div class="outcome-stat"><span class="outcome-num">38 min</span><span class="outcome-desc">Decrease in time on task per maintenance instance</span></div>
-        <div class="outcome-stat"><span class="outcome-num">+48</span><span class="outcome-desc">More rent-ready days per vehicle per year</span></div>
-        <div class="outcome-stat"><span class="outcome-num">$6,000</span><span class="outcome-desc">Increase in revenue per vehicle, per year</span></div>
-        <div class="outcome-stat"><span class="outcome-num">&lt;90 days</span><span class="outcome-desc">From inception to people in the field — even as an outside-roadmap initiative</span></div>
+        <div class="outcome-stat">
+          <span class="outcome-num">38 min</span>
+          <span class="outcome-desc">Decrease in time on task per maintenance instance</span>
+        </div>
+        <div class="outcome-stat">
+          <span class="outcome-num">+48</span>
+          <span class="outcome-desc">More rent-ready days per vehicle per year</span>
+        </div>
+        <div class="outcome-stat">
+          <span class="outcome-num">$6,000</span>
+          <span class="outcome-desc">Increase in revenue per vehicle, per year</span>
+        </div>
+        <div class="outcome-stat">
+          <span class="outcome-num">&lt;90 days</span>
+          <span class="outcome-desc">From inception to people in the field — even as an outside-roadmap initiative</span>
+        </div>
       </div>
+
       <h2>What We Learned</h2>
-      <p>This initiative showed that even large companies can move fast when given space to do so. Because this project lived outside the normal product roadmap, there was freedom to solve the big problem without getting bogged down in competing priorities. Insisting on baseline metrics before starting gave the team something to rally around — and revealed opportunities in unexpected areas.</p>
+      <p>This initiative showed that even large companies can move fast when given space to do so. Because this project lived outside the normal product roadmap, there was freedom to solve the big problem without getting bogged down in competing priorities.</p>
+      <p>Insisting on baseline metrics before starting gave the team something to rally around — and revealed opportunities in unexpected areas. Collaborative work, even with stakeholders who had limited availability, produced better results than siloed design work. And starting small, iterating quickly, and shipping early allowed us to take leaps rather than crawl.</p>
+
     </div>
   </div>
+
   <div class="container">
     <div class="cs-nav">
-      <a href="inventory-management.html"><div class="cs-nav-label">← Previous</div><div class="cs-nav-title">Inventory Management</div></a>
-      <a href="how-to-build-ux-team.html" class="cs-nav-next"><div class="cs-nav-label">Next →</div><div class="cs-nav-title">Building a UX Team</div></a>
+      <a href="inventory-management.html">
+        <div class="cs-nav-label">&#8592; Previous</div>
+        <div class="cs-nav-title">Inventory Management</div>
+      </a>
+      <a href="how-to-build-ux-team.html" class="cs-nav-next">
+        <div class="cs-nav-label">Next &#8594;</div>
+        <div class="cs-nav-title">Building a UX Team</div>
+      </a>
     </div>
   </div>
+
   <footer>
     <div class="container">
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/steve-kansa-12b8a84/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:stkansa@gmail.com">Email</a>
       </div>
-      <p>© 2026 Steve Kansa · Head of UX / Sr. UX Manager</p>
+      <p>&#169; 2026 Steve Kansa &middot; Head of UX / Sr. UX Manager</p>
     </div>
   </footer>
+
 </body>
 </html>
