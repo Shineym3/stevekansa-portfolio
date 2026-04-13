@@ -9,6 +9,38 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .situation-layout { display: flex; gap: 2rem; align-items: flex-start; }
+    .situation-text { flex: 1; }
+    .situation-thumb { flex: 0 0 auto; }
+    .situation-thumb img {
+      max-height: 220px;
+      width: auto;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.1);
+      cursor: zoom-in;
+      transition: opacity 0.2s;
+      display: block;
+    }
+    .situation-thumb img:hover { opacity: 0.85; }
+    .situation-thumb figcaption {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      margin-top: 0.4rem;
+    }
+    #img-lightbox {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.88);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    #img-lightbox.open { display: flex; }
+    #img-lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 8px; }
+  </style>
 </head>
 <body>
 
@@ -54,9 +86,17 @@
     <div class="container">
 
       <h2>Situation</h2>
-      <p>The Awarding experience allows buyers to select which supplier receives a contract. Despite being a critical step in the procurement workflow, the feature had low adoption and frequent user confusion. Support tickets were high and the enablement team was spending significant time helping users through this part of the process.</p>
-      <p>The interface had originally been built quickly before the company had dedicated UX resources. As a result, the page lacked a clear information hierarchy, the primary call to action was vague, and users often didn't trust the returned results. Buyers also had little visibility into what would happen after awarding a supplier, creating hesitation during a high-stakes decision.</p>
-      <p>Because the workflow didn't align with how buyers actually worked, many continued managing decisions in Excel-based tools — creating duplicate work by entering the same information in multiple places.</p>
+      <div class="situation-layout">
+        <div class="situation-text">
+          <p>The Awarding experience allows buyers to select which supplier receives a contract. Despite being a critical step in the procurement workflow, the feature had low adoption and frequent user confusion. Support tickets were high and the enablement team was spending significant time helping users through this part of the process.</p>
+          <p>The interface had originally been built quickly before the company had dedicated UX resources. As a result, the page lacked a clear information hierarchy, the primary call to action was vague, and users often didn't trust the returned results. Buyers also had little visibility into what would happen after awarding a supplier, creating hesitation during a high-stakes decision.</p>
+          <p>Because the workflow didn't align with how buyers actually worked, many continued managing decisions in Excel-based tools — creating duplicate work by entering the same information in multiple places.</p>
+        </div>
+        <figure class="situation-thumb">
+          <img src="images/awarding/original-product.png" alt="Original Awarding interface before redesign" loading="lazy" onclick="document.getElementById('img-lightbox').classList.add('open'); document.getElementById('img-lightbox-img').src=this.src" />
+          <figcaption>Original interface</figcaption>
+        </figure>
+      </div>
 
       <h2>Task</h2>
       <p>My goal was to identify the sources of friction and redesign the awarding workflow so buyers could confidently complete the process within the platform.</p>
@@ -115,7 +155,7 @@
       <p>After high-fidelity designs were implemented, I released the new awarding workflow to a small group of beta customers to monitor adoption and completion rates while gathering feedback from buyers and the enablement team. Early signals were encouraging — more buyers were completing awards directly in the platform instead of relying on Excel workflows.</p>
       <p>The beta also surfaced a few remaining points of confusion. Based on feedback and support conversations, I made small adjustments to labeling and guidance before rolling out more broadly.</p>
 
-      <img class="cs-img" src="images/awarding/rollout.png" alt="Rollout" loading="lazy" />
+      <img class="cs-img" src="images/awarding/rollout.png" alt="Rollout — new Awarding interface" loading="lazy" />
 
       <h2>Outcomes &amp; Impact</h2>
       <div class="outcomes">
@@ -162,6 +202,10 @@
       <p>© 2026 Steve Kansa · Head of UX / Sr. UX Manager</p>
     </div>
   </footer>
+
+  <div id="img-lightbox" onclick="this.classList.remove('open')">
+    <img id="img-lightbox-img" src="" alt="Expanded view" />
+  </div>
 
 </body>
 </html>
